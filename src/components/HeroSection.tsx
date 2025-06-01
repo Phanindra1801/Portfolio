@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8 w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full border-4 border-white dark:border-gray-800 shadow-xl overflow-hidden">
           <img 
-            src="src/components/1.jpeg" 
+            src="./1.jpeg" 
             alt="Profile"
             className="w-full h-full object-cover"
           />

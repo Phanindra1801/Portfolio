@@ -118,10 +118,10 @@ const SkillsSection: React.FC = () => {
 
   {/* Certification Images */}
   <div className="flex flex-wrap justify-center gap-6">
-    <img src="src/components/3.png" alt="AWS CP Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
-    <img src="src/components/4.png" alt="Redhat Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
-    <img src="src/components/5.png" alt="Juniper Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
-    <img src="src/components/6.png" alt="Frontend Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
+    <img src="./3.png" alt="AWS CP Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
+    <img src="./4.png" alt="Redhat Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
+    <img src="./5.png" alt="Juniper Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
+    <img src="./6.png" alt="Frontend Certificate" style={{ width: '17rem' }} className="rounded-lg shadow-lg" />
   </div>
 </div>
 
