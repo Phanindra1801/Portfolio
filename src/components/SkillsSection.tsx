@@ -18,20 +18,19 @@ const skillCategories: SkillCategory[] = [
     name: 'Frontend',
     icon: <Layout className="w-8 h-8 text-blue-500 dark:text-blue-400" />,
     skills: [
-      { name: 'HTML', level: 92, category: 'Frontend' },
-      { name: 'CSS', level: 90, category: 'Frontend' },
+      { name: 'HTML', level: 85, category: 'Frontend' },
+      { name: 'CSS', level: 80, category: 'Frontend' },
       { name: 'JavaScript', level: 70, category: 'Frontend' },
-      { name: 'React', level: 60, category: 'Frontend' },
+      { name: 'React', level: 70, category: 'Frontend' },
     ],
   },
   {
     name: 'Backend',
     icon: <Server className="w-8 h-8 text-blue-500 dark:text-blue-400" />,
     skills: [
-      { name: 'Spring Boot', level: 88, category: 'Backend' },
-      { name: 'Django', level: 85, category: 'Backend' },
+      { name: 'Spring Boot', level: 75, category: 'Backend' },
+      { name: 'Django', level: 80, category: 'Backend' },
       { name: 'Node.js', level: 60, category: 'Backend' },
-      { name: 'Next.js', level: 60, category: 'Backend' },
     ],
   },
   {
@@ -49,8 +48,8 @@ const skillCategories: SkillCategory[] = [
     icon: <Lightbulb className="w-8 h-8 text-blue-500 dark:text-blue-400" />,
     skills: [
       { name: 'Data Structures', level: 70, category: 'Other' },
-      { name: 'Git', level: 90, category: 'Other' },
-      { name: 'UI/UX Design', level: 85, category: 'Other' },
+      { name: 'Git', level: 85, category: 'Other' },
+      { name: 'UI/UX Design', level: 80, category: 'Other' },
       { name: 'AWS', level: 70, category: 'Other' },
     ],
   },
