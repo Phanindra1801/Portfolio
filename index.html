@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head lang="en" class="dark">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="John Doe - Full Stack Developer Portfolio showcasing projects and skills in web development, UI/UX design, and software engineering.">
+    <meta name="keywords" content="portfolio, web developer, frontend, backend, full stack, UI/UX, developer">
+    <title>Phanindra's | Portfolio</title>
+    <style>
+      /* Custom cursor styles */
+      .custom-cursor a, .custom-cursor button {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      
+      /* Add loading animation */
+      .page-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .dark .page-loader {
+        background: #1f2937;
+      }
+      
+      .loader-circle {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(96, 165, 250, 0.2);
+        border-top-color: #60a5fa;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Modern scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      .dark ::-webkit-scrollbar-track {
+        background: #374151;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #60a5fa;
+        border-radius: 5px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3b82f6;
+      }
+      
+      /* Fade-in animation classes */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      
+      .fade-in.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      /* Selection color */
+      ::-moz-selection {
+        background: rgba(96, 165, 250, 0.3);
+        color: inherit;
+      }
+      ::selection {
+        background: rgba(96, 165, 250, 0.3);
+        color: inherit;
+      }
+    </style>
+    <script type="module" crossorigin src="https://github.com/Phanindra1801/Portfolio.git/assets/index--_yMW5Q5.js"></script>
+    <link rel="stylesheet" crossorigin href="https://github.com/Phanindra1801/Portfolio.git/assets/index-C8EVo3UA.css">
+  </head>
+  <body lang="en" class="dark">
+    <!-- Page loader -->
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-circle"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Remove loader when page is loaded
+      window.addEventListener('load', function() {
+        const loader = document.getElementById('pageLoader');
+        if (loader) {
+          loader.style.opacity = 0;
+          setTimeout(() => {
+            loader.style.display = 'none';
+          }, 500);
+        }
+        
+        // Initialize fade-in elements
+        setTimeout(() => {
+          const fadeElems = document.querySelectorAll('.fade-in');
+          fadeElems.forEach(elem => {
+            elem.classList.add('active');
+          });
+        }, 300);
+      });
+      
+      // Check for dark mode preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </body>
+</html>
